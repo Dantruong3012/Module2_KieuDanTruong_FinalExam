@@ -12,7 +12,7 @@ public class Contacts {
     private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
    
-    private static final String DATA_FOLDER = "data";
+    private static final String DATA_FOLDER = "src/com/codegym/module2/kieudantruong/contact_data";
     private static final String FILE_NAME = "contacts.csv";
 
     private List<Users> contactList = new ArrayList<>();
@@ -27,7 +27,7 @@ public class Contacts {
    
     public void displayContacts() {
         if (contactList.isEmpty()) {
-            System.out.println("⚠️ Danh bạ trống!");
+            System.out.println("Danh bạ trống!");
             return;
         }
         System.out.println("\n--- DANH SÁCH LIÊN HỆ ---");
@@ -54,7 +54,7 @@ public class Contacts {
         Users newUser = new Users(phoneNumbe, contactGroup, contactName, gender, address, birthday, email);
         contactList.add(newUser);
 
-        System.out.println("✅ Thêm vào bộ nhớ thành công (Nhớ chọn chức năng 7 để Lưu vào file)!");
+        System.out.println(" Thêm vào bộ nhớ thành công (Nhớ chọn chức năng 7 để Lưu vào file)!");
     }
 
    
@@ -72,7 +72,7 @@ public class Contacts {
         }
 
         if (userToUpdate == null) {
-            System.out.println("❌ Không tìm thấy số điện thoại " + phoneToFind + " trong danh bạ!");
+            System.out.println(" Không tìm thấy số điện thoại " + phoneToFind + " trong danh bạ!");
             return;
         }
 
@@ -103,7 +103,7 @@ public class Contacts {
         String newEmail = helper.readEmail("Nhập email: ");
         userToUpdate.setEmail(newEmail);
 
-        System.out.println("✅ Cập nhật thông tin trên bộ nhớ thành công!");
+        System.out.println("Cập nhật thông tin trên bộ nhớ thành công!");
     }
 
    
@@ -149,7 +149,7 @@ public class Contacts {
         }
 
         if (!found) {
-            System.out.println("❌ Không tìm thấy liên hệ nào phù hợp!");
+            System.out.println(" Không tìm thấy liên hệ nào phù hợp!");
         }
     }
 

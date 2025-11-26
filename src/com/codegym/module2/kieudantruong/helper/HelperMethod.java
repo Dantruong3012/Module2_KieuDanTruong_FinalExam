@@ -33,7 +33,7 @@ public class HelperMethod {
                 return value;
             } catch (NumberFormatException e) {
                 System.out.println(
-                        "❌ Your selection is in the wrong format. It must be between " + min + " and " + max + ".");
+                        " Your selection is in the wrong format. It must be between " + min + " and " + max + ".");
             }
         }
     }
@@ -58,7 +58,7 @@ public class HelperMethod {
                 String input = sc.nextLine();
                 return sdf.parse(input);
             } catch (ParseException e) {
-               System.out.println("❌ Invalid date format. Please use dd/MM/yyyy");
+               System.out.println(" Invalid date format. Please use dd/MM/yyyy");
             }
         }
     }
@@ -73,7 +73,7 @@ public class HelperMethod {
                 }
                 return phone;
             } catch (Exception e) {
-                System.out.println("❌ Invalid phone number format. Please enter a valid phone number.");
+                System.out.println("Invalid phone number format. Please enter a valid phone number.");
             }
         }
     }
@@ -89,7 +89,7 @@ public class HelperMethod {
                 }
                 return email;
             } catch (Exception e) {
-                System.out.println("❌ Invalid email format. Please enter a valid email address.");
+                System.out.println(" Invalid email format. Please enter a valid email address.");
             }
         }
     }
